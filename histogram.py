@@ -11,8 +11,11 @@ def main():
     V = []
     for l in open(args.in_file):
         A = l.rstrip().split()
-        for a in A:
-            V.append(float(a))
+        print(A[1])
+        try:
+            V.append(float(A[1]))
+        except ValueError:
+            V.append(float(A[2]))
 
     fig = plt.figure(figsize=(args.width,args.height),dpi=300)
 
