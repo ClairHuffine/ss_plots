@@ -17,6 +17,11 @@ def get_args(description):
                         type=str,
                         required=True,
                         help='Input file')
+    
+    parser.add_argument('--in_file2',
+                        type=str,
+                        required=False,
+                        help='Input file')
 
     parser.add_argument('--out_file',
                         type=str,
